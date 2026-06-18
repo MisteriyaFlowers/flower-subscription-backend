@@ -1,0 +1,202 @@
+```gitignore
+# ==================================================
+# Build output
+# ==================================================
+target/
+out/
+build/
+
+# Maven backup files
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+
+# Do not ignore Maven Wrapper
+!.mvn/wrapper/maven-wrapper.jar
+!mvnw
+!mvnw.cmd
+
+
+# ==================================================
+# IntelliJ IDEA
+# ==================================================
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# IntelliJ generated files
+.idea_modules/
+cmake-build-*/
+httpRequests/
+
+
+# ==================================================
+# Visual Studio Code
+# ==================================================
+.vscode/
+
+
+# ==================================================
+# Eclipse / Spring Tool Suite
+# ==================================================
+.classpath
+.project
+.settings/
+.springBeans
+.sts4-cache/
+.factorypath
+bin/
+
+
+# ==================================================
+# NetBeans
+# ==================================================
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+
+# ==================================================
+# Java compiled files
+# ==================================================
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+
+
+# ==================================================
+# Logs
+# ==================================================
+logs/
+*.log
+*.log.*
+log/
+hs_err_pid*
+replay_pid*
+
+
+# ==================================================
+# Environment variables and local configuration
+# ==================================================
+.env
+.env.*
+!.env.example
+
+application-local.yml
+application-local.yaml
+application-local.properties
+
+application-dev-local.yml
+application-dev-local.yaml
+application-dev-local.properties
+
+application-secret.yml
+application-secret.yaml
+application-secret.properties
+
+config/application-local.yml
+config/application-local.yaml
+config/application-local.properties
+
+
+# ==================================================
+# Secrets and certificates
+# ==================================================
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+
+secrets/
+secret/
+credentials/
+
+
+# ==================================================
+# Database and local storage
+# ==================================================
+*.db
+*.sqlite
+*.sqlite3
+
+data/
+local-data/
+
+# H2 local database files
+*.mv.db
+*.trace.db
+
+
+# ==================================================
+# Uploaded and generated files
+# ==================================================
+uploads/
+generated/
+temp/
+tmp/
+
+
+# ==================================================
+# Test reports and code coverage
+# ==================================================
+coverage/
+jacoco.exec
+site/
+surefire-reports/
+failsafe-reports/
+
+
+# ==================================================
+# Docker local overrides
+# ==================================================
+docker-compose.override.yml
+compose.override.yml
+
+
+# ==================================================
+# Operating system files
+# ==================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+.Trash-*
+
+
+# ==================================================
+# Temporary files
+# ==================================================
+*.tmp
+*.temp
+*.swp
+*.swo
+*.bak
+*.backup
+*.orig
+.cache/
+```
