@@ -2,14 +2,15 @@ spring:
   application:
     name: flower-subscription-backend
 
-  # Временно отключаем автоконфигурацию базы данных.
-  # Удалим этот блок на втором этапе,
-  # когда подключим PostgreSQL и Flyway.
   autoconfigure:
     exclude:
-      - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
-      - org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration
       - org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+
+    open-in-view: false
 
 server:
   port: 8080
